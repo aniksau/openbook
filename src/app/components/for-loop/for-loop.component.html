@@ -1,0 +1,7 @@
+<ul class="flex flex-col justify-center">
+    @for (item of iterableItem; track item ) {
+        <li>{{ item | json }}</li>
+    } @empty {
+        <li>There is none</li>
+    }
+</ul>
